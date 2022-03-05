@@ -27,6 +27,7 @@ body {
     background: url("images/java-background.png") no-repeat fixed;
     background-size: 10%;
     background-position: 50%;
+    height: 100%;
 }
 
 p {
@@ -35,17 +36,24 @@ p {
 
 .body-div {
     display: inline-block;
-    width: 90%;
-    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
 }
 
 .myself {
+    position: relative;
+    max-width: 800px;
+}
+
+.myself h1 {
+    display: block;
+    padding-top: 100px;
+    padding-left: 350px;
     text-align: center;
-    padding: 40px;
-    margin-left: 30px;
     font-weight: bold;
     border-radius: 10px;
     position: relative;
+    max-width: 300px;
 }
 
 .myself img {
@@ -53,6 +61,24 @@ p {
     left: 15px;
     top: 35px;
     width: 400px;
+}
+
+.mini-gallery {
+    float: right;
+    right: 5px;
+    display: block;
+}
+
+.mini-gallery #img1 {
+    right: 80px;
+    width: 150px;
+    height: 300px;
+}
+
+.mini-gallery #img2 {
+    right: 0px;
+    width: 150px;
+    height: 300px;
 }
 
 #back-end {
@@ -89,10 +115,11 @@ p {
 
 .bottom {
     position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 99%;
     margin: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 99%;
     display: inline;
     clear: none;
     background-color: #333333;

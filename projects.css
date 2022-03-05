@@ -81,10 +81,11 @@ p {
 
 .bottom {
     position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 99%;
     margin: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 99%;
     display: inline;
     clear: none;
     background-color: #333333;
