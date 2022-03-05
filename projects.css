@@ -1,4 +1,4 @@
-.pages-nav {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -6,11 +6,11 @@
     background-color: #333333;
 }
 
-.pages-nav li {
+li {
     float: left;
 }
 
-.pages-nav li a {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -24,9 +24,6 @@ li a:hover {
 
 body {
     background-color: white;
-    background: url("images/java-background.png") no-repeat fixed;
-    background-size: 10%;
-    background-position: 50%;
 }
 
 p {
@@ -39,28 +36,20 @@ p {
     flex-direction: column;
 }
 
-.myself {
-    text-align: center;
-    padding: 40px;
-    margin-left: 30px;
-    font-weight: bold;
-    border-radius: 10px;
-    position: relative;
-}
 
-.myself img {
-    position: absolute;
-    left: 15px;
-    top: 35px;
-    width: 400px;
-}
+
+
+
+
+
+
 
 #back-end {
-    color: rgb(233, 85, 16);
+    color: rgb(207, 17, 55);
 }
 
 #back-end:hover {
-    color: rgb(209, 63, 27);
+    color: rgb(231, 37, 76);
     text-decoration: underline wavy ;
 }
 
