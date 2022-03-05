@@ -24,6 +24,9 @@ li a:hover {
 
 body {
     background-color: white;
+    background: url("images/java-background.png") no-repeat fixed;
+    background-size: 10%;
+    background-position: 50%;
 }
 
 p {
