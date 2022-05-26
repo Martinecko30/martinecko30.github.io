@@ -18,6 +18,7 @@
        </ul>
    </nav>
 </head>
+
 <body>
    <div class="body-div">
         <span class="about-me-text">I first started learning Java for Minecraft plugin developemnt and as I contiuned I learned C# and Unity game development, I followed by CSS & HTML</span>
@@ -28,7 +29,28 @@
     var date = today.getDate() + ". " + today.getMonth() + ". " + today.getFullYear();
     document.getElementById("currentDate").innerHTML = date;
   </script>
+
+  <p>My age: <span id="my-age"></span></p>
+  <script>
+    var dateString = '2005-12-30';
+    var d = new Date();
+    var n = d.getFullYear();
+    function getAge(dateString){
+        var today = new Date();
+        var birthDate = new Date(dateString);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+        {
+            age--;
+        }
+        return age;
+    }
+    calculatedAge = getAge(dateString);
+    document.getElementById("my-age").innerHTML = calculatedAge;
+  </script>
 </body>
+
 </body>
 <footer>
    <div class="bottom">
