@@ -1,107 +1,15 @@
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111111;
-}
-
-body {
-    background-color: white;
-    background: url("images/java-background.png") no-repeat fixed;
-    background-size: 10%;
-    background-position: 50%;
+#github-img {
+    width: 6%;
+    flex: auto;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     color: black;
-}
-
-.body-div {
-    display: inline-block;
-    width: 90%;
-    flex-direction: column;
-}
-
-
-
-
-
-
-
-
-
-#back-end {
-    color: rgb(207, 17, 55);
-}
-
-#back-end:hover {
-    color: rgb(231, 37, 76);
-    text-decoration: underline wavy ;
-}
-
-.about-me-card {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0, 0, 0, 0.22);
-    width: 250px;
-    box-sizing: border-box;
-    transition-duration: 1s;
-}
-.about-me-card > img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0px;
-}
-.about-me-card > p {
-    font-family: sans-serif;
-    padding: 0px 10px 10px 10px;
-    text-align: center;
-}
-.about-me-card:hover {
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.30), 0 14px 11px rgba(0, 0, 0, 0.22);
-    width: 270px;
-    cursor: pointer;
-}
-
-.bottom {
-    position: fixed;
-    margin: 10px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 99%;
-    display: inline;
-    clear: none;
-    background-color: #333333;
-}
-
-.bottom .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: white;
-    float: right;
-}
-
-.fa:hover {
-    opacity: 0.7;
+    max-width: 500px;
+    margin-left: 30px;
+    position: relative;
 }

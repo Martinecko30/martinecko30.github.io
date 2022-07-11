@@ -1,58 +1,11 @@
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111111;
-}
-
-body {
-    background-color: white;
-    background: url("images/java-background.png") no-repeat fixed;
-    background-size: 10%;
-    background-position: 50%;
-}
-
-p {
-    color: black;
-}
-
-.body-div {
-    display: inline-block;
-    width: 90%;
-    flex-direction: column;
-}
-
 .about-me-text {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: black;
-    max-width: 300px;
+    max-width: 500px;
     padding: 40px 40px;
 }
-
-
-
-
-
-
 
 #back-end {
     color: rgb(207, 17, 55);
@@ -63,52 +16,9 @@ p {
     text-decoration: underline wavy ;
 }
 
-.about-me-card {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30), 0 11px 8px rgba(0, 0, 0, 0.22);
-    width: 250px;
-    box-sizing: border-box;
-    transition-duration: 1s;
-}
-.about-me-card > img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0px;
-}
-.about-me-card > p {
-    font-family: sans-serif;
-    padding: 0px 10px 10px 10px;
-    text-align: center;
-}
-.about-me-card:hover {
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.30), 0 14px 11px rgba(0, 0, 0, 0.22);
-    width: 270px;
-    cursor: pointer;
-}
-
-.bottom {
-    position: fixed;
-    margin: 10px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 99%;
-    display: inline;
-    clear: none;
-    background-color: #333333;
-}
-
-.bottom .fa {
-    padding: 20px;
+p {
     font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: white;
-    float: right;
-}
-
-.fa:hover {
-    opacity: 0.7;
+    color: black;
+    padding-top: 300px;
+    padding-left: 40px;
 }
