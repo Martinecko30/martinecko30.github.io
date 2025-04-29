@@ -1,23 +1,83 @@
-.myself {
-    position: relative;
-    max-width: 800px;
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* toto zakáže scrollovanie */
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    color: white;
 }
 
-.myself h1 {
-    display: block;
-    padding-top: 100px;
-    padding-left: 350px;
-    text-align: center;
+.container {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 100vh;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.image {
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.text-content {
+    margin-left: 40px;
+    max-width: 500px;
+}
+
+.name {
+    font-size: 3rem;
+    margin: 0;
+    color: #A4303F;
+    transition: font-size 1s, color 0.5s;
+}
+
+.name:hover {
+    font-size: 3.5rem;
+    color: #b23949;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #F39B6D;
+    transition: font-size 1s, color 0.5s;
+}
+
+.title:hover {
+    font-size: 2.25rem;
+    color: #f8a275;
+}
+
+.about {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #E9E3B4;
+    text-align: justify;
+}
+
+.button {
+    position: relative;
+    background-color: #AABD8C;
     font-weight: bold;
-    border-radius: 10px;
-    position: relative;
-    max-width: 300px;
+    border: none;
+    font-size: 1.2rem;
+    color: #222222;
+    padding: 20px;
+    width: 205px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: color 0.5s;
+    display: inline-block;
 }
 
-.myself img {
-    position: absolute;
-    left: 20px;
-    top: 35px;
-    width: 280px;
-    border-style: groove;
+.button:hover {
+    background-color: #c1d79e;
 }

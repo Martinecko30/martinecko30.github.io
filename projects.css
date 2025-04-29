@@ -1,15 +1,112 @@
-#github-img {
-    width: 6%;
-    flex: auto;
-    margin-left: 30px;
-    margin-top: 30px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #222222;
+    color: white;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: black;
-    max-width: 500px;
-    margin-left: 30px;
+.timeline {
     position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: black;
+    z-index: 0;
+}
+
+.left-line {
+    left: 49.5%;
+}
+
+.right-line {
+    left: 50.5%;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-item.left .image-side {
+    order: 1;
+}
+
+.timeline-item.left .text-side {
+    order: 2;
+    margin-left: 40px;
+}
+
+
+
+.timeline-item.right .text-side {
+    order: 1;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.timeline-item.right .image-side {
+    order: 2;
+}
+
+.card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-side {
+    position: relative;
+}
+
+.image-side img {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.year {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    font-size: 2rem;
+}
+
+.timeline-item.left .year {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.timeline-item.right .year {
+    left: 0;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+.text-side h2 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.text-side p {
+    font-size: 1.2rem;
+    margin: 0;
 }
