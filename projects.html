@@ -1,90 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Valent - Projekty</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="projects.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projekty — Softwarový inženýr</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
-<header>
-    <ul class="navbar">
-        <li><a href="index.html">O mne</a></li>
-        <li class="selected"><a href="">Projekty</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-    </ul> 
-</header>
-
 <body>
-    <div class="timeline">
-        <div class="line left-line"></div>
-        <div class="line right-line"></div>
+    <main class="wrap">
+		<header>
+			<div class="brand">
+                <div class="avatar">
+                <img src="images/ProfilePic.jpg" alt="Martin Valent" style="width:120px;height:120px;border-radius:18px;object-fit:cover;margin-right:18px;">
+                </div>
+				<div>
+                    <div style="font-weight:800; font-size:30px">Martin Valent</div>
+                    <div class="muted" style="font-size:18px">Softvérový inžinier</div>
+				</div>
+			</div>
+			<nav>
+                   <a href="index.html">O mne</a>
+                   <a href="projects.html" class="active" aria-current="page">Projekty</a>
+                   <a href="contact.html">Kontakt</a>
+			</nav>
+		</header>
+		<div style="max-width:900px;margin:40px auto;padding:24px;">
+			<h1>Moje projekty</h1>
 
-        <div class="timeline-item left">
-            <div class="card image-side">
-                <div class="year">2025-...</div>
-                <img src="images/PegasusEngine.png" alt="Pegasus Engine">
-            </div>
-            <div class="card text-side">
-                <h2>Pegasus Engine</h2>
-                <p>
-                    🤫
-                </p>
-            </div>
-        </div>
+            <section style="margin-top:20px;background:#1a0b2d;padding:20px;border-radius:12px;">
+                <img src="images/ScrewIt.png" alt="ScrewIT screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
+                <h2>ScrewIT</h2>
+                   <p class="muted">Akčná hra, kde vašou úlohou je "zaskrutkovať" všetky skrutky v časovom limite. Hra kombinuje rýchle reflexy, presnosť a zábavné animácie. V ScrewIT som sa zameral na intuitívne ovládanie a originálny vizuálny štýl. Hra je dostupná priamo v prehliadači a je vhodná na krátke oddychové hranie.</p>
+                <ul style="margin-top:8px;">
+                    <li>Použité technológie: Unity, C#</li>
+                    <li>Rola: vývojár</li>
+                    <li>Rok: 2023</li>
+                </ul>
+                <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/screw-it" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
+            </section>
 
-        <div class="timeline-item right">
-            <div class="card text-side">
-                <h2>Mine It!</h2>
-                <p>
-                    V roku 2023 som sa rozhodol spraviť moju už druhú mobilnú videohru. Malo sa jednať o Super Casual kde hlavným cielom bolo ťažiť a následne predávať suroviny.
-                </p>
-            </div>
-            <div class="card image-side">
-                <div class="year">2023-2025</div>
-                <img src="images/MineIt.png" alt="Mine It!">
-            </div>
-        </div>
+            <section style="margin-top:20px;background:#1a0b2d;padding:20px;border-radius:12px;">
+                <img src="images/AlienInvasion.png" alt="Alien Invasion screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
+                <h2>Alien Invasion</h2>
+                   <p class="muted">Strategická hra, kde bránite ostrov pred mimozemskou inváziou. Hráč musí takticky rozmiestniť obranu, reagovať na rôzne typy nepriateľov a efektívne využívať dostupné zdroje. Alien Invasion je zmes akcie, stratégie a rýchleho rozhodovania, pričom ponúka rôzne úrovne obtiažnosti. Hra je dostupná v prehliadači.</p>
+                <ul style="margin-top:8px;">
+                    <li>Použité technológie: Unity, C#</li>
+                    <li>Rola: vývojár</li>
+                    <li>Rok: 2022</li>
+                </ul>
+                <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/island-invasion" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
+            </section>
 
-        <div class="timeline-item left">
-            <div class="card image-side">
-                <div class="year">2023-2025</div>
-                <img src="images/RocnikovaPraca.png" alt="Ročníková Práca">
-            </div>
-            <div class="card text-side">
-                <h2>Ročníková Práca</h2>
-                <p>
-                    Počas môjho štúdia na strednej škole som spravil program zobrazujúci 3D grafiku pomocou knižnice OpenTK v jazyku C#. Tento projekt som následne použil počas praktickej maturitnej skúšky.
-                </p>
-            </div>
-        </div>
+            <section style="margin-top:20px;background:#1a0b2d;padding:20px;border-radius:12px;">
+                <img src="images/PegasusEngine.png" alt="PegasusEngine screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
+                <h2>PegasusEngine</h2>
+                   <p class="muted">Vlastný 3D herný engine v C#. PegasusEngine je navrhnutý pre experimentovanie s grafikou, fyzikou a optimalizáciou výkonu. Podporuje vlastné renderovanie, správu objektov, kolízie a jednoduché skriptovanie. Projekt mi umožnil prehĺbiť znalosti o architektúre herných enginov a práci s OpenGL.</p>
+                <ul style="margin-top:8px;">
+                    <li>Použité technológie: C#, OpenGL</li>
+                    <li>Rola: autor, vývojár</li>
+                    <li>Rok: 2024</li>
+                </ul>
+                <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/PegasusEngine" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
+            </section>
 
-        <div class="timeline-item right">
-            <div class="card text-side">
-                <h2>Zlatý Bluďišták</h2>
-                <p>
-                    Zúčastnil som sa kurzu Python pro stredoškolaký od FI Masarkyovej Univerzity v Brne. Za finálny projekt sme mali spraviť jednoduchú hru aby sme ukázali čo sme sa naučili. Spolu v tíme sme teda vytvorili hru o prechádzaní náhodne generovaného bludiska a nazvali ju Zlatý Bludišťák. 
-                </p>
-            </div>
-            <div class="card image-side">
-                <div class="year">2024</div>
-                <img src="images/ZlatyBludistak.jpg" alt="Zlatý Bludišťák">
-            </div>
-        </div>
+            <section style="margin-top:20px;background:#1a0b2d;padding:20px;border-radius:12px;">
+                <h2>KPU (Karlík Processing Unit)</h2>
+                   <p class="muted">Emulátor procesora KSI24/25 v Pythone. KPU simuluje správanie reálneho CPU, vrátane spracovania inštrukcií, registrami a pamäťou. Projekt je určený na vzdelávacie účely a pomáha lepšie pochopiť princípy fungovania procesorov. Obsahuje aj vizualizáciu vykonávaných operácií.</p>
+                <ul style="margin-top:8px;">
+                    <li>Použité technológie: Python</li>
+                    <li>Rola: autor, vývojár</li>
+                    <li>Rok: 2025</li>
+                </ul>
+                <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/KPU" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
+            </section>
 
-        <div class="timeline-item left">
-            <div class="card image-side">
-                <div class="year">2022</div>
-                <img src="images/BallPong.png" alt="Solo Pong">
-            </div>
-            <div class="card text-side">
-                <h2>Solo Pong</h2>
-                <p>
-                    Aby som sa naučil základy C++ rozhodol som sa spraviť malú sólo hru. Hlavnou úlohou hráča bolo odrážať loptičku od stien a prežiť aby mu nespadla pod jeho pádlo. Naučil som sa pracovať jednak v C++ ale zároveň aj s knižnicou SFML.
-                </p>
-            </div>
-        </div>
-    </div>
+            <section style="margin-top:20px;background:#1a0b2d;padding:20px;border-radius:12px;">
+                <h2>Krolog</h2>
+                   <p class="muted">Implementácia logického programovacieho jazyka Prolog v Pythone. Krolog umožňuje definovať logické pravidlá, fakty a vykonávať inferenciu nad nimi. Projekt je vhodný na experimentovanie s umelou inteligenciou, logickým programovaním a výučbu základov Prologu. Obsahuje jednoduché rozhranie na zadávanie dotazov.</p>
+                <ul style="margin-top:8px;">
+                    <li>Použité technológie: Python</li>
+                    <li>Rola: autor, vývojár</li>
+                    <li>Rok: 2025</li>
+                </ul>
+                <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/Krolog" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
+            </section>
+
+            <section style="margin-top:20px;background:#1a0b2d;padding:20px;border-radius:12px;">
+                <img src="images/BubbleCat.png" alt="BubbleCat screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
+                <h2>BubbleCat</h2>
+                <p class="muted">Akčná plošinovka s mačkou Bublinkou. Skáčte, zbierajte bubliny a prekonávajte prekážky. Play in browser.</p>
+                <ul style="margin-top:8px;">
+                    <li>Použité technológie: Unity, C#</li>
+                    <li>Rola: lead, vývojár</li>
+                    <li>Rok: 2022</li>
+                </ul>
+                <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/bubblecat" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
+            </section>
+    </main>
 </body>
 </html>

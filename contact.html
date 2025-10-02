@@ -1,26 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Valent - Kontakt</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kontakt — Martin Valent</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<header>
-    <ul class="navbar">
-        <li><a href="index.html">O mne</a></li>
-        <li><a href="projects.html">Projekty</a></li>
-        <li class="selected"><a href="">Kontakt</a></li>
-    </ul> 
-</header>
-
 <body>
-    <div class="content">
-        <p>Sup</p>
-    </div>
+    <main class="wrap">
+            <header>
+                <div class="brand">
+                    <div class="avatar">
+                    <img src="images/ProfilePic.jpg" alt="Martin Valent" style="width:120px;height:120px;border-radius:18px;object-fit:cover;margin-right:18px;">
+                    </div>
+                    <div>
+                        <div style="font-weight:800; font-size:30px">Martin Valent</div>
+                        <div class="muted" style="font-size:18px">Softvérový inžinier</div>
+                    </div>
+                </div>
+                <nav>
+                    <a href="index.html">O mne</a>
+                    <a href="projects.html">Projekty</a>
+                    <a href="contact.html" class="active" aria-current="page">Kontakt</a>
+                </nav>
+            </header>
+            <div style="max-width:600px;margin:40px auto;padding:24px;">
+                <h1>Kontakt</h1>
+                <p>Chcete ma kontaktovať? Vyplňte formulár alebo mi napíšte priamo na e‑mail.</p>
+    <form action="mailto:martinecko30@gmail.com" method="post" enctype="text/plain">
+    <input name="name" placeholder="Vaše meno" style="padding:10px;border-radius:8px;border:none;background:#1a0b2d;color:#ede9fe">
+    <input name="email" placeholder="E‑mail" style="padding:10px;border-radius:8px;border:none;background:#1a0b2d;color:#ede9fe">
+    <textarea name="message" placeholder="Správa" rows="5" style="padding:10px;border-radius:8px;border:none;background:#1a0b2d;color:#ede9fe"></textarea>
+    <button type="submit" style="padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#c084fc,#a855f7);color:#1e1030;font-weight:700;border:none;">Odoslať</button>
+    </form>
+    <p style="margin-top:20px;">E‑mail: <a href="mailto:martinecko30@gmail.com" style="color:#c084fc;text-decoration:none">martinecko30@gmail.com</a></p>
+    </main>
 </body>
-<footer>
-
-</footer>
 </html>

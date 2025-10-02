@@ -1,38 +1,143 @@
-<!DOCTYPE html>
-<html lang="sk">
+<!doctype html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Valent</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>O mne — Martin Valent</title>
+  <meta name="description" content="Osobná stránka — softvérový inžinier a herní vývojár v Brna, Unity, C#/Java/Python, Spring Boot.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<header>
-    <ul class="navbar">
-        <li class="selected"><a href="">O mne</a></li>
-        <li><a href="projects.html">Projekty</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-    </ul> 
-</header>
-
 <body>
-    <div class="container">
-        <img class="image" src="images/Myself.jpg" alt="Myself">
-        <div class="text-content">
-            <h1 class="name">Martin Valent</h1>
-            <h2 class="title">C# Developer</h2>
-            <p class="about">
-                Som vášnivý C# vývojár so zameraním na vývoj videohier, no mojou skutočnou silou je schopnosť tvoriť – nielen hry, ale aj riešenia, ktoré majú zmysel. Už viac ako 5 rokov sa venujem programovaniu, pričom sa pohybujem naprieč viacerými technológiami ako Unity, vlastné enginy, Java či Python.
-                <br>
-                Tvorba hier nie je len mojou profesiou, ale aj priestorom, kde prepájam technické zručnosti s kreativitou. Vytvoril som si vlastný herný engine, aby som lepšie pochopil, čo sa skrýva „pod kapotou“. Pri práci rád hľadám rovnováhu medzi funkčnosťou a eleganciou kódu.
-                <br>
-                Vo voľnom čase siaham po knihách – od technických titulov až po beletriu, ktorá mi pomáha rozvíjať empatiu a iný pohľad na svet. Som človek, ktorý sa neustále učí, zdokonaľuje a rád pracuje na veciach, ktoré majú skutočný dopad.
-            </p>
+  <main class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <img src="images/ProfilePic.jpg" alt="Martin Valent" style="width:120px;height:120px;border-radius:18px;object-fit:cover;margin-right:18px;">
         </div>
-    </div>
-</body>
-<footer>
+        <div>
+          <div style="font-weight:800; font-size:30px">Martin Valent</div>
+          <div class="muted" style="font-size:18px">Softvérový inžinier</div>
+        </div>
+      </div>
+      <nav>
+  <a href="#o-mne" class="active" aria-current="page">O mne</a>
+  <a href="projects.html">Projekty</a>
+  <a href="contact.html">Kontakt</a>
+      </nav>
+    </header>
 
-</footer>
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Volám sa <span style="color:var(--accent)">Martin Valent</span></h1>
+          <p class="lead">a študujem Programovanie a vývoj aplikácií na Fakulte informatiky v Brne. Mojím cieľom je uplatniť sa ako softvérový inžinier.</p>
+
+          <section id="o-mne" class="about">
+            <h2 style="margin-top:18px">O mne</h2>
+            <p>Mám viac než päť rokov skúseností s programovaním so zameraním na vývoj hier a softvérových aplikácií. Ovládam C#, Java a Python. Aktívne vyvíjam v Unity, zároveň som vytvoril vlastné 3D herné enginy pomocou OpenGL. 
+            
+            <br><br>
+
+            Na strane backendu pracujem so Spring Boot (Java). Python používam prevažne v akademickom prostredí. Som rodinný Slovák, momentálne žijem v Brne, a už vyše dvoch rokov sa venujem výuke detí v programovaní.
+                            
+            <br><br>
+
+            Herný vývoj považujem za svoju hlavnú špecializáciu, pričom mám záujem o komplexné riešenia v oblasti softvérového inžinierstva a návrhu aplikácií.</p>
+            <div class="skills">
+              <span class="skill">C#</span>
+              <span class="skill">Java</span>
+              <span class="skill">Python</span>
+              <span class="skill">Unity</span>
+              <span class="skill">Spring Boot</span>
+              <span class="skill">HTML/CSS</span>
+            </div>
+            <div class></div>
+          </section>
+
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Čo ponúkam</h3>
+          <ul style="margin-top:8px;color:var(--muted);padding-left:18px">
+            <li>Vývoj her v Unity (2D/3D)</li>
+            <li>Backendové služby (Spring Boot, REST API)</li>
+            <li>Softwarová architektura a návrh řešení</li>            
+            <li>Profesionálny prístup k projektom s kombináciou technických znalostí a kreativity.</li>
+            <li>Spoľahlivosť, inovatívnosť a ochotu učiť sa nové veci s dôrazom na kvalitu.</li>
+          </ul>
+          <div style="margin-top:12px">
+            <a class="btn" href="contact.html" style="display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#a855f7);color:#1e1030;font-weight:700;text-decoration:none">Napište mi</a>
+          </div>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Rýchle info</h3>
+          <ul class="muted" style="margin-top:14px;list-style:none;padding-left:0">
+            <li>Žijem v Brne</li>
+            <li>Softvérový inžinier a herný vývojár</li>
+            <li>5+ rokov skúseností s programovaním</li>
+            <li>Unity, C#, Python, Java, Spring Boot</li>
+            <li>Výuka detí v programovaní</li>
+            <li>Otvorený novým projektom a spolupráci</li>
+          </ul>
+          <!-- <a href="Martin_Valent_CV.pdf" download>Stiahnuť CV</a> -->
+        </div>
+
+        <div class="card">
+            <h3>Jazyky</h3>
+            <p class="muted" style="margin-top:14px">
+                <div class="skills">
+                    <span class="skill">Slovenčina (Rodný jazyk)</span>
+                    <span class="skill">Čeština</span>
+                    <span class="skill">Angličtina (B2)</span>
+                  </div>
+            </p>
+          </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4>Ukážkový projekt</h4>
+          <div class="portfolio-grid">
+            <div class="proj" style="display:flex;align-items:center;gap:12px;">
+              <a href="projects.html#screwit" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:inherit;">
+                <img src="images/ScrewIt.png" alt="ScrewIT" style="width:48px;height:48px;border-radius:8px;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.12);">
+                <span>ScrewIT — akčná hra na zaskrutkovanie všetkých skrutiek v časovom limite (Unity, C#)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Sociálne siete</h3>
+          <div class="social-links" style="display:flex;flex-direction:column;gap:10px;margin-top:10px;">
+            <a href="https://github.com/Martinecko30" target="_blank" style="display:flex;align-items:center;gap:8px;color:#c084fc;text-decoration:none;font-weight:600;">
+              <span style="width:22px;height:22px;display:inline-block;">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.71.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.38 9.38 0 012.5-.34c.85.01 1.71.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0022 12.26C22 6.58 17.52 2 12 2z"></path></svg>
+              </span>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/martinecko30/" target="_blank" style="display:flex;align-items:center;gap:8px;color:#c084fc;text-decoration:none;font-weight:600;">
+              <span style="width:22px;height:22px;display:inline-block;">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.32-.03-3-1.83-3-1.83 0-2.11 1.43-2.11 2.91v5.59h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"></path></svg>
+              </span>
+              LinkedIn
+            </a>
+            <!-- Pridajte ďalšie odkazy podľa potreby rovnakým spôsobom -->
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Martin Valent
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
