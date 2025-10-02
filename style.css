@@ -119,13 +119,73 @@ footer{
 @media (max-width:880px){
     .hero{
         grid-template-columns:1fr;
-    }
-    .avatar{
-        width:48px;height:48px
+        gap:16px;
+        margin-top:16px;
     }
     .wrap{
-        margin:18px auto;padding:16px
+        margin:8px auto;
+        padding:8px;
+        max-width:100vw;
     }
+    .avatar{
+        width:64px;
+        height:64px;
+        margin-right:10px;
+    }
+    header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+    nav{
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        margin-top:8px;
+    }
+    nav a{
+        margin-left:0;
+        font-size:16px;
+        padding-bottom:2px;
+    }
+    .card{
+        padding:12px;
+        margin-bottom:12px;
+    }
+    h1{
+        font-size:22px;
+    }
+    .portfolio-grid{
+        grid-template-columns:1fr;
+        gap:8px;
+    }
+    .proj img{
+        width:36px !important;
+        height:36px !important;
+    }
+    .proj span{
+        font-size:15px;
+    }
+    .skills{
+        gap:6px;
+    }
+    .skill{
+        font-size:12px;
+        padding:6px 8px;
+    }
+    footer{
+        font-size:12px;
+        margin-top:16px;
+    }
+    form{
+        gap:8px;
+        margin-top:10px;
+    }
+    input, textarea, button{
+        font-size:15px;
+    }
+}
 }
 .muted{color:var(--muted)}
 
