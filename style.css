@@ -23,7 +23,12 @@ header{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:16px
+    gap:16px;
+    width:100%;
+    box-sizing:border-box;
+    max-width:980px;
+    margin:0 auto;
+    padding:0 12px;
 }
 .brand{
     display:flex;
@@ -136,6 +141,10 @@ footer{
         flex-direction:column;
         align-items:flex-start;
         gap:8px;
+        width:100%;
+        max-width:100vw;
+        box-sizing:border-box;
+        padding:0 4vw;
     }
     nav{
         width:100%;
