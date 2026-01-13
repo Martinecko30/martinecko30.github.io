@@ -1,8 +1,8 @@
 :root{
-    --bg:#12051e;
-    --card:#1a0b2d;
-    --muted:#b8a3d9;
-    --accent:#c084fc
+    --bg:#262626;
+    --card:#111111;
+    --muted:#d0d0d0;
+    --accent: #ffffff;
 }
 *{
     box-sizing:border-box
@@ -10,8 +10,8 @@
 body{
     margin:0;
     font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    background:linear-gradient(180deg,#0d0416 0%,#1b1030 100%);
-    color:#ede9fe;
+    background:linear-gradient(180deg,#1a1a1a 0%,#2b2b2b 100%);
+    color:#f0f0f0;
     line-height:1.5
 }
 .wrap{
@@ -39,12 +39,12 @@ header{
     width:120px;
     height:120px;
     border-radius:18px;
-    background:linear-gradient(135deg,var(--accent),#a855f7);
+    background:linear-gradient(135deg,var(--accent),#f79055);
     display:flex;
     align-items:center;
     justify-content:center;
     font-weight:700;
-    color:#1e1030;
+    color:#302010;
     margin-right:18px;
 }
 nav a{
@@ -88,7 +88,7 @@ p.lead{
 }
 .about p{
     margin-top:12px;
-    color:#e9d5ff
+    color:#f1f1f1
 }
 .skills{
     display:flex;
@@ -99,7 +99,7 @@ p.lead{
 .skill{
     padding:8px 10px;
     border-radius:999px;
-    background:rgba(192,132,252,0.12);
+    background:rgba(252, 180, 132, 0.12);
     color:var(--accent);
     font-weight:600;
     font-size:13px
@@ -195,7 +195,7 @@ footer{
         font-size:15px;
     }
 }
-}
+
 .muted{color:var(--muted)}
 
 form {
@@ -203,4 +203,12 @@ form {
     flex-direction:column;
     gap:12px;
     margin-top:16px;
+}
+
+.project {
+    margin-top: 20px;
+    background: #151515;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow:0 6px 18px rgba(10,0,23,0.7);
 }
