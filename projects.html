@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="cs">
+<html lang="sk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Projekty — Softwarový inženýr</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
     <main class="wrap">
@@ -27,87 +28,97 @@
 		<div style="max-width:900px;margin:40px auto;padding:24px;">
 			<h1>Moje projekty</h1>
 
-            <section class="project">
-                <img src="images/PegasusLogo.svg" alt="Pegasus Engine Logo" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
-                <h2>PegasusEngine</h2>
-                   <p class="muted">Vlastný 3D herný engine v C#. PegasusEngine je navrhnutý pre experimentovanie s grafikou, fyzikou a optimalizáciou výkonu. Podporuje vlastné renderovanie, správu objektov, kolízie a jednoduché skriptovanie. Projekt mi umožnil prehĺbiť znalosti o architektúre herných enginov a práci s OpenGL.</p>
-                <ul style="margin-top:8px;">
-                    <li>Použité technológie: C#, OpenGL</li>
-                    <li>Rola: autor, vývojár</li>
-                    <li>Rok: 2024 - Dnes</li>
-                </ul>
-                <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/PegasusEngine" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
-            </section>
+            <div class="project-grid">
+                <a href="pegasus.html" class="project">
+                    <img src="images/PegasusLogo.svg" alt="Pegasus Engine Logo">
+                    <h2>PegasusEngine</h2>
 
-            <section class="project">
-                <img src="images/ScrewIt.png" alt="ScrewIT screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
-                <h2>ScrewIT</h2>
-                   <p class="muted">Akčná hra, kde vašou úlohou je "zaskrutkovať" všetky skrutky v časovom limite. Hra kombinuje rýchle reflexy, presnosť a zábavné animácie. V ScrewIT som sa zameral na intuitívne ovládanie a originálny vizuálny štýl. Hra je dostupná priamo v prehliadači a je vhodná na krátke oddychové hranie.</p>
-                <ul style="margin-top:8px;">
-                    <li>Použité technológie: Unity, C#</li>
-                    <li>Rola: vývojár</li>
-                    <li>Rok: 2023</li>
-                </ul>
-                <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/screw-it" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
-            </section>
+                    <p class="muted">Vlastný 3D herný engine v C#. PegasusEngine je navrhnutý pre experimentovanie s grafikou, fyzikou a optimalizáciou výkonu. Podporuje vlastné renderovanie, správu objektov, kolízie a jednoduché skriptovanie. Projekt mi umožnil prehĺbiť znalosti o architektúre herných enginov a práci s OpenGL.</p>
 
-            <section class="project">
-                <img src="images/EneryProject.png" alt="Pegasus Engine Logo" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
-                <h2>Project - Enery</h2>
-                   <p class="muted">Enery je vzdelávacia dobrodružná hra zasadená do postapokalyptickej pustatiny, v ktorej hráč vedie komunitu detí snažiacich sa prežiť a obnoviť svet. Hra kombinuje prvky prieskumu a „point-and-click“ adventúry s riešením logických hádaniek, čím hráčov interaktívne učí o vede, technológiách a ekológii. Okrem virtuálnej zábavy projekt presahuje do reality odomykaním návodov na skutočné "urob si sám" projekty, ako je napríklad stavba solárnej kuchyne, čím podporuje environmentálnu zodpovednosť.</p>
-                <ul style="margin-top:8px;">
-                    <li>Použité technológie: Unity, C#</li>
-                    <li>Rola: vývojár</li>
-                    <li>Rok: 2024</li>
-                </ul>
-                <p style="margin-top:12px;"><a href="https://levelup-official.itch.io/enery" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / Itch.io</a></p>
-            </section>
+                    <ul style="margin-top:8px;">
+                        <li>Použité technológie: C#, OpenGL</li>
+                        <li>Rola: autor, vývojár</li>
+                        <li>Rok: 2024 - Dnes</li>
+                    </ul>
+                    <p style="margin-top:auto; padding-top:12px; color:#c084fc; font-weight:600;">
+                        Viac o projekte →
+                    </p>
+                </a>
 
-            <section class="project">
-                <img src="images/AlienInvasion.png" alt="Alien Invasion screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
-                <h2>Alien Invasion</h2>
-                   <p class="muted">Strategická hra, kde bránite ostrov pred mimozemskou inváziou. Hráč musí takticky rozmiestniť obranu, reagovať na rôzne typy nepriateľov a efektívne využívať dostupné zdroje. Alien Invasion je zmes akcie, stratégie a rýchleho rozhodovania, pričom ponúka rôzne úrovne obtiažnosti. Hra je dostupná v prehliadači.</p>
-                <ul style="margin-top:8px;">
-                    <li>Použité technológie: Unity, C#</li>
-                    <li>Rola: vývojár</li>
-                    <li>Rok: 2022</li>
-                </ul>
-                <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/island-invasion" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
-            </section>
+                <a href="screwit.html" class="project">
+                    <img src="images/ScrewIt.png" alt="ScrewIT Logo">
+                    <h2>Screw It</h2>
 
-            <section class="project">
-                <h2>KPU (Karlík Processing Unit)</h2>
-                   <p class="muted">Emulátor procesora KSI24/25 v Pythone. KPU simuluje správanie reálneho CPU, vrátane spracovania inštrukcií, registrami a pamäťou. Projekt je určený na vzdelávacie účely a pomáha lepšie pochopiť princípy fungovania procesorov. Obsahuje aj vizualizáciu vykonávaných operácií.</p>
-                <ul style="margin-top:8px;">
-                    <li>Použité technológie: Python</li>
-                    <li>Rola: autor, vývojár</li>
-                    <li>Rok: 2025</li>
-                </ul>
-                <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/KPU" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
-            </section>
+                    <p class="muted">Akčná hra, kde vašou úlohou je "zaskrutkovať" všetky skrutky v časovom limite. Hra kombinuje rýchle reflexy, presnosť a zábavné animácie. V ScrewIT som sa zameral na intuitívne ovládanie a originálny vizuálny štýl. Hra je dostupná priamo v prehliadači a je vhodná na krátke oddychové hranie.</p>
 
-            <section class="project">
-                <h2>Krolog</h2>
-                   <p class="muted">Implementácia logického programovacieho jazyka Prolog v Pythone. Krolog umožňuje definovať logické pravidlá, fakty a vykonávať inferenciu nad nimi. Projekt je vhodný na experimentovanie s umelou inteligenciou, logickým programovaním a výučbu základov Prologu. Obsahuje jednoduché rozhranie na zadávanie dotazov.</p>
-                <ul style="margin-top:8px;">
-                    <li>Použité technológie: Python</li>
-                    <li>Rola: autor, vývojár</li>
-                    <li>Rok: 2025</li>
-                </ul>
-                <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/Krolog" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
-            </section>
-
-            <section class="project">
-                <img src="images/BubbleCat.png" alt="BubbleCat screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
-                <h2>BubbleCat</h2>
-                <p class="muted">Akčná plošinovka s mačkou Bublinkou. Skáčte, zbierajte bubliny a prekonávajte prekážky. Play in browser.</p>
-                <ul style="margin-top:8px;">
-                    <li>Použité technológie: Unity, C#</li>
-                    <li>Rola: lead, vývojár</li>
-                    <li>Rok: 2025</li>
-                </ul>
-                <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/bubblecat" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
-            </section>
+                    <ul style="margin-top:8px;">
+                        <li>Použité technológie: Unity, C#</li>
+                        <li>Rola: vývojár</li>
+                        <li>Rok: 2023</li>
+                    </ul>
+                    <p style="margin-top:auto; padding-top:12px; color:#c084fc; font-weight:600;">
+                        Viac o projekte →
+                    </p>
+                </a>
+                
+                <section class="project">
+                    <img src="images/EneryProject.png" alt="Pegasus Engine Logo" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
+                    <h2>Project - Enery</h2>
+                    <p class="muted">Enery je vzdelávacia dobrodružná hra zasadená do postapokalyptickej pustatiny, v ktorej hráč vedie komunitu detí snažiacich sa prežiť a obnoviť svet. Hra kombinuje prvky prieskumu a „point-and-click“ adventúry s riešením logických hádaniek, čím hráčov interaktívne učí o vede, technológiách a ekológii. Okrem virtuálnej zábavy projekt presahuje do reality odomykaním návodov na skutočné "urob si sám" projekty, ako je napríklad stavba solárnej kuchyne, čím podporuje environmentálnu zodpovednosť.</p>
+                    <ul style="margin-top:8px;">
+                        <li>Použité technológie: Unity, C#</li>
+                        <li>Rola: vývojár</li>
+                        <li>Rok: 2024</li>
+                    </ul>
+                    <p style="margin-top:12px;"><a href="https://levelup-official.itch.io/enery" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / Itch.io</a></p>
+                </section>
+                
+                <section class="project">
+                    <img src="images/AlienInvasion.png" alt="Alien Invasion screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
+                    <h2>Alien Invasion</h2>
+                    <p class="muted">Strategická hra, kde bránite ostrov pred mimozemskou inváziou. Hráč musí takticky rozmiestniť obranu, reagovať na rôzne typy nepriateľov a efektívne využívať dostupné zdroje. Alien Invasion je zmes akcie, stratégie a rýchleho rozhodovania, pričom ponúka rôzne úrovne obtiažnosti. Hra je dostupná v prehliadači.</p>
+                    <ul style="margin-top:8px;">
+                        <li>Použité technológie: Unity, C#</li>
+                        <li>Rola: vývojár</li>
+                        <li>Rok: 2022</li>
+                    </ul>
+                    <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/island-invasion" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
+                </section>
+                
+                <section class="project">
+                    <h2>KPU (Karlík Processing Unit)</h2>
+                    <p class="muted">Emulátor procesora KSI24/25 v Pythone. KPU simuluje správanie reálneho CPU, vrátane spracovania inštrukcií, registrami a pamäťou. Projekt je určený na vzdelávacie účely a pomáha lepšie pochopiť princípy fungovania procesorov. Obsahuje aj vizualizáciu vykonávaných operácií.</p>
+                    <ul style="margin-top:8px;">
+                        <li>Použité technológie: Python</li>
+                        <li>Rola: autor, vývojár</li>
+                        <li>Rok: 2025</li>
+                    </ul>
+                    <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/KPU" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
+                </section>
+                
+                <section class="project">
+                    <h2>Krolog</h2>
+                    <p class="muted">Implementácia logického programovacieho jazyka Prolog v Pythone. Krolog umožňuje definovať logické pravidlá, fakty a vykonávať inferenciu nad nimi. Projekt je vhodný na experimentovanie s umelou inteligenciou, logickým programovaním a výučbu základov Prologu. Obsahuje jednoduché rozhranie na zadávanie dotazov.</p>
+                    <ul style="margin-top:8px;">
+                        <li>Použité technológie: Python</li>
+                        <li>Rola: autor, vývojár</li>
+                        <li>Rok: 2025</li>
+                    </ul>
+                    <p style="margin-top:12px;"><a href="https://github.com/Martinecko30/Krolog" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na projekt / GitHub</a></p>
+                </section>
+                
+                <section class="project">
+                    <img src="images/BubbleCat.png" alt="BubbleCat screenshot" style="width:100%;max-width:320px;border-radius:10px;margin-bottom:12px;object-fit:cover;">
+                    <h2>BubbleCat</h2>
+                    <p class="muted">Akčná plošinovka s mačkou Bublinkou. Skáčte, zbierajte bubliny a prekonávajte prekážky. Play in browser.</p>
+                    <ul style="margin-top:8px;">
+                        <li>Použité technológie: Unity, C#</li>
+                        <li>Rola: lead, vývojár</li>
+                        <li>Rok: 2025</li>
+                    </ul>
+                    <p style="margin-top:12px;"><a href="https://martinecko30.itch.io/bubblecat" target="_blank" style="color:#c084fc;text-decoration:none">Odkaz na hru / itch.io</a></p>
+                </section>
+            </div>
     </main>
 </body>
 </html>

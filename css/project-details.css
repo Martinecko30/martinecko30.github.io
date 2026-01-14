@@ -1,0 +1,227 @@
+/* --- LAYOUT PRE DETAIL PROJEKTU --- */
+
+.detail-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 12px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--accent);
+}
+
+/* --- HEADER PROJEKTU --- */
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #fff, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-logo-large img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(192, 132, 252, 0.15);
+}
+
+/* --- TAGY A META DATA --- */
+.meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--accent);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- BUTTONS --- */
+.buttons {
+    margin-top: 24px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #c084fc;
+    color: #1a0b2d;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(192, 132, 252, 0.4);
+}
+
+/* --- CONTENT GRID (TEXT + SIDEBAR) --- */
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 40px 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.main-text h2 {
+    color: var(--accent);
+    margin-top: 0;
+}
+
+.main-text h3 {
+    margin-top: 30px;
+    color: #e0e0e0;
+}
+
+.main-text p {
+    color: #d0d0d0;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-size: 17px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    color: #d0d0d0;
+}
+
+.feature-list li::before {
+    content: "•";
+    color: #c084fc;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+}
+
+/* --- SIDEBAR --- */
+.sidebar-info .card {
+    position: sticky;
+    top: 20px;
+}
+
+.tech-detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-detail-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.tech-detail-list li:last-child {
+    border-bottom: none;
+}
+
+.tech-detail-list strong {
+    color: var(--accent);
+    margin-right: 6px;
+}
+
+/* --- GALÉRIA --- */
+.gallery {
+    margin-top: 60px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.caption {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+}
+
+/* --- RESPONZIVITA --- */
+@media (max-width: 768px) {
+    .project-header {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .project-logo-large img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .meta-tags {
+        justify-content: center;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}

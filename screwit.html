@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PegasusEngine - Martin Valent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+</head>
+<body>
+    <main class="wrap">
+        <header>
+			<div class="brand">
+                <div class="avatar">
+                <img src="images/ProfilePic.jpg" alt="Martin Valent" style="width:120px;height:120px;border-radius:18px;object-fit:cover;margin-right:18px;">
+                </div>
+				<div>
+                    <div style="font-weight:800; font-size:30px">Martin Valent</div>
+                    <div class="muted" style="font-size:18px">Softvérový inžinier</div>
+				</div>
+			</div>
+			<nav>
+                   <a href="index.html">O mne</a>
+                   <a href="projects.html" class="active">Projekty</a>
+                   <a href="contact.html">Kontakt</a>
+			</nav>
+		</header>
+        <div class="detail-container">
+            <a href="projects.html" class="back-link">← Späť na projekty</a>
+
+            <div class="project-header">
+                <div class="project-info">
+                    <h1>Screw It</h1>
+                    <p class="lead">Akčná hra, kde vašou úlohou je "zaskrutkovať" všetky skrutky v časovom limite.</p>
+                    
+                    <div class="meta-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Unity</span>
+                        <span class="tag">2023</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="https://martinecko30.itch.io/screw-it" target="_blank" class="btn-primary">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M2.925 3.99c-.197.887 1.134 3.018 1.134 3.018s-1.077 2.067-.283 5.378c.849 3.535 3.398 3.62 3.398 3.62L7.683 20h8.724l.566-3.994s2.492-.085 3.34-3.62c.794-3.31-.282-5.378-.282-5.378s1.332-2.13 1.134-3.018c-.198-.887-2.606-1.927-4.248-1.586-1.614-.34-3.277-.607-4.869-.804a14.28 14.28 0 00-4.898.832c-1.68.556-4.032 1.565-4.23 2.452zm6.654 3.677c.85 0 1.529.708 1.529 1.558 0 .85-.68 1.558-1.53 1.558-.849 0-1.529-.708-1.529-1.558 0-.85.68-1.558 1.53-1.558zm4.99 0c.85 0 1.53.708 1.53 1.558 0 .85-.68 1.558-1.53 1.558-.85 0-1.53-.708-1.53-1.558 0-.85.68-1.558 1.53-1.558z"></path></svg>
+                            Pozrieť na itch.io
+                        </a>
+                    </div>
+                </div>
+                <div class="project-logo-large">
+                    <img src="images/ScrewIt.png" alt="Screw It Logo">
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="content-grid">
+                
+                <section class="main-text">
+                    <h2>O projekte</h2>
+                    <p>Screw It vznikol ako Game Jam projekt kde sme mali v týme 9 hodín na to spraviť hru. Každé 3 hodiny sme museli spraviť Build a vystaviť verziu na stránku Itch.io</p>
+                </section>
+
+                <aside class="sidebar-info">
+                    <div class="card">
+                        <h3>Tech Stack</h3>
+                        <ul class="tech-detail-list">
+                            <li><strong>Jazyk:</strong> C# (.NET 8)</li>
+                            <li><strong>Engine:</strong> Unity</li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+
+            <section class="gallery">
+                <h2>Galéria</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/ScrewIt.png" alt="Screw It Logo">
+                        <span class="caption">Logo</span>
+                    </div>
+                    </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        © <span id="year"></span> Martin Valent
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
