@@ -93,20 +93,22 @@ h1 {
     margin-bottom: 18px;
 }
 
-.skills {
+/* --- TAGY A META DATA --- */
+.meta-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 12px;
+    gap: 10px;
+    margin: 20px 0;
 }
 
-.skill {
-    padding: 8px 10px;
-    border-radius: 999px;
-    background: rgba(252, 180, 132, 0.12);
+.tag {
+    background: rgba(255, 255, 255, 0.08);
     color: var(--accent);
-    font-weight: 600;
-    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 form {

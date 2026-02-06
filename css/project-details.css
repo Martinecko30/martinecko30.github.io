@@ -47,24 +47,6 @@
     box-shadow: 0 8px 32px rgba(192, 132, 252, 0.15);
 }
 
-/* --- TAGY A META DATA --- */
-.meta-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.tag {
-    background: rgba(255, 255, 255, 0.08);
-    color: var(--accent);
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 /* --- BUTTONS --- */
 .buttons {
     margin-top: 24px;
