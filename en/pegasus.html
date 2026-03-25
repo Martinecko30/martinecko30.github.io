@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PegasusEngine - Martin Valent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+</head>
+<body>
+    <main class="wrap">
+        <header>
+			<div class="brand">
+                <div class="avatar">
+                <img src="images/ProfilePic.jpg" alt="Martin Valent" style="width:120px;height:120px;border-radius:18px;object-fit:cover;margin-right:18px;">
+                </div>
+				<div>
+                    <div style="font-weight:800; font-size:30px">Martin Valent</div>
+                    <div class="muted" style="font-size:18px">Softvérový inžinier</div>
+				</div>
+			</div>
+			<nav>
+                   <a href="index.html">O mne</a>
+                   <a href="projects.html" class="active">Projekty</a>
+                   <a href="contact.html">Kontakt</a>
+			</nav>
+		</header>
+        <div class="detail-container">
+            <a href="projects.html" class="back-link">← Späť na projekty</a>
+
+            <div class="project-header">
+                <div class="project-info">
+                    <h1>PegasusEngine</h1>
+                    <p class="lead">Vlastný 3D herný engine postavený na C# a OpenGL pre experimentovanie s grafikou a fyzikou.</p>
+                    
+                    <div class="meta-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">OpenGL</span>
+                        <span class="tag">OpenTK</span>
+                        <span class="tag">2024 - Dnes</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="https://github.com/Martinecko30/PegasusEngine" target="_blank" class="btn-primary">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.71.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.38 9.38 0 012.5-.34c.85.01 1.71.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0022 12.26C22 6.58 17.52 2 12 2z"></path></svg>
+                            Pozrieť na GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-logo-large">
+                    <img src="images/PegasusLogo.svg" alt="Pegasus Engine Logo">
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="content-grid">
+                
+                <section class="main-text">
+                    <h2>O projekte</h2>
+                    <p>PegasusEngine vznikol ako projekt z vášne s cieľom pochopiť, čo sa deje "pod kapotou" moderných herných enginov ako Unity alebo Unreal. Namiesto použitia hotových riešení som sa rozhodol implementovať základné systémy od nuly pomocou C# a knižnice OpenTK (wrapper pre OpenGL).</p>
+                    
+                    <p>Aktuálna verzia enginu podporuje základné 3D renderovanie, načítavanie modelov, kamerový systém a jednoduchú správu scény. V budúcnosti plánujem pridať fyzikálny engine a editor scény s grafickým rozhraním.</p>
+
+                    <h3>Kľúčové vlastnosti</h3>
+                    <ul class="feature-list">
+                        <li><strong>Vlastný Rendering Pipeline:</strong> Implementácia shaderov, bufferov a vykresľovacích slučiek priamo v OpenGL.</li>
+                        <li><strong>Scene Management:</strong> Hierarchický systém objektov (Parent-Child vzťahy).</li>
+                        <li><strong>Systém Komponentov:</strong> Architektúra inšpirovaná ECS (Entity Component System) pre flexibilitu herných objektov.</li>
+                        <li><strong>Input System:</strong> Abstrakcia vstupu z klávesnice a myši.</li>
+                    </ul>
+                </section>
+
+                <aside class="sidebar-info">
+                    <div class="card">
+                        <h3>Tech Stack</h3>
+                        <ul class="tech-detail-list">
+                            <li><strong>Jazyk:</strong> C# (.NET 8)</li>
+                            <li><strong>Grafika:</strong> OpenGL 4.x</li>
+                            <li><strong>Wrapper:</strong> OpenTK</li>
+                            <li><strong>UI:</strong> ImGui.NET (plánované)</li>
+                            <li><strong>Matematika:</strong> OpenTK.Mathematics</li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+
+            <section class="gallery">
+                <h2>Galéria</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/PegasusLogo.svg" alt="Pegasus Logo">
+                        <span class="caption">Logo</span>
+                    </div>
+                    </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        © <span id="year"></span> Martin Valent
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

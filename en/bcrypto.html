@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PegasusEngine - Martin Valent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-details.css">
+</head>
+<body>
+    <main class="wrap">
+        <header>
+			<div class="brand">
+                <div class="avatar">
+                <img src="images/ProfilePic.jpg" alt="Martin Valent" style="width:120px;height:120px;border-radius:18px;object-fit:cover;margin-right:18px;">
+                </div>
+				<div>
+                    <div style="font-weight:800; font-size:30px">Martin Valent</div>
+                    <div class="muted" style="font-size:18px">Softvérový inžinier</div>
+				</div>
+			</div>
+			<nav>
+                   <a href="index.html">O mne</a>
+                   <a href="projects.html" class="active">Projekty</a>
+                   <a href="contact.html">Kontakt</a>
+			</nav>
+		</header>
+        <div class="detail-container">
+            <a href="projects.html" class="back-link">← Späť na projekty</a>
+
+            <div class="project-header">
+                <div class="project-info">
+                    <h1>bCrypto</h1>
+                    <p class="lead">Kryptomenový plugin pre minecraftový server s rozšírením ekonomiky.</p>
+                    
+                    <div class="meta-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Paper MC</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">2024 - Dnes</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="https://basicland.cz/" target="_blank" class="btn-primary">
+                            <img src="images/BasicLandLogo.png" alt="BasicLand Logo" width="20" height="20" style="filter: grayscale(100%);">
+                            Pozrieť web Basicland
+                        </a>
+                    </div>
+                </div>
+                <div class="project-logo-large">
+                    <img src="images/BasicLandLogo.png" alt="Basicland Logo">
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="content-grid">
+                
+                <section class="main-text">
+                    <h2>O projekte</h2>
+                    <p>bCrypto je plugin pre Minecraft server Basicland.cz. Plugin podrpouje ekonomiku a rozvíja ju o možnosti kryptomien ktoré sú napojené na reálny svet. Umožnuje hráčov vytvoriť si vlastnú peňaženku, nakupovať a predávať kryptomeny a pozerať si históriu zmien.</p>
+
+                    <h3>Kľúčové vlastnosti</h3>
+                    <ul class="feature-list">
+                        <li><strong>Kryptomeny:</strong> Plugin je napojený na API a všetky ceny sú v reálnom čase.</li>
+                        <li><strong>Peňaženky:</strong> Hráč si vytvára vlastnú peňaženku z vlastnou ekonomikou prepojenou na server.</li>
+                    </ul>
+                </section>
+
+                <aside class="sidebar-info">
+                    <div class="card">
+                        <h3>Tech Stack</h3>
+                        <ul class="tech-detail-list">
+                            <li><strong>Jazyk:</strong>Java (JDK 21)</li>
+                            <li><strong>Engine:</strong>Paper MC</li>
+                            <li><strong>Databáza: </strong>SQLite</li>
+                            <li><strong>Build Tool: </strong>Gradle</li>
+                            <li><strong>Automation Tool: </strong>Lombok</li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+
+            <section class="gallery">
+                <h2>Galéria</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/BasicLandLogo.png" alt="Basicland Logo">
+                        <span class="caption">Logo</span>
+                    </div>
+                    </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        © <span id="year"></span> Martin Valent
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

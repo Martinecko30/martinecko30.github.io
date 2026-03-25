@@ -81,6 +81,10 @@ h1 {
     font-size: 28px;
 }
 
+h3 {
+    margin: 0px 0px 18px 0px;
+}
+
 .muted {
     color: var(--muted);
 }
